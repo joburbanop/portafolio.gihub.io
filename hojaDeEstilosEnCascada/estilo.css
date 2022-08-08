@@ -2,10 +2,9 @@
 body
 {  
     font-family: 'Ubuntu', sans-serif;
-    background-image: url("../imagenes/muro.jpg") ;
-
-    
+    background-image: url("../imagenes/muro.jpg") ; 
 }
+/*la parte superior de el portafolio*/
 .cabezera
 { 
     
@@ -14,6 +13,11 @@ body
     color: rgb(255, 255, 255);
     justify-content: space-between;
     height: 90px;
+    max-width: 2600px;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .navegacionOMenu
@@ -39,6 +43,7 @@ body
     height: inherit;
     padding: 0px 10px;
    
+   
 }
 
 figure
@@ -52,8 +57,8 @@ h1,h2,h3,h4,h5,h6
     font-weight: 400;
       
 }
+/*descripcion personal */
 .seccionHero
-
 {
     
     display: flex;
@@ -61,71 +66,82 @@ h1,h2,h3,h4,h5,h6
     background-color: #1b2127;
     align-items: center;
     justify-content: space-between;
-   
+    max-width: 2600px;
+    margin: 0 auto;
 }
 .imagehero
 {
     object-fit: cover;
+    height: 50%;
+    width: 40%;
 }
 
 h1{
     line-height: 50px;
     font-size: 30px;
-    letter-spacing: -.5px;  
-    width: 800px; 
+    letter-spacing: -.4px;  
+    width: 600px; 
     color: aliceblue;
-    margin: 0px;
     margin: 30px;
 }
 h1 strong{
     color: #8485FE;
 }
-
+/*curso seccion experiencia conocimiento*/
+.titleCours
+{
+    margin: 0 100px;
+}
 .cours
 {
   background-color: rgba(255, 255, 255, 0.767);
-  border: 1px solid rgba(255, 255, 255, 0.767)y;
   border-radius: 10px;
   display: flex;
   flex-wrap: wrap;
+  max-width: 2600px;
   align-items: center;
-
-
-
+  margin: 0 auto;
+  justify-content: space-between;
 }
-.cours img
-{
-    margin: 70px;
-}
+
 .titleCours
 {
     padding: 30px;
 }
 .textconocimiento
 {
-    margin: 30px;
-    padding: 30px;
+    margin: auto;
     background-color: #d0d7ded3;
     border: #d0d7ded3 1px;
     border-radius: 10px;
-    width: 500px;
-    height: 450px;
+    width: 40%;
+    
       
+}
+.imageContainer
+{
+    width: 50%;
+}
+.portfolioImage{
+    width: 100%;
+
 }
 .textconocimiento h3,h4
 {
     text-transform: capitalize;
+    text-align: center;
 }
 .textconocimient p
 {
     text-transform: initial;
+    text-align: center;
 }
 .titulosotorgados
 {
     background-color:#bcc3ca ;
     border: #bcc3ca 1px solid;
     border-radius: 10px;
-    text-align: left;
+    text-align: center;
     
 }
 .titulosotorgados strong a
@@ -135,28 +151,34 @@ h1 strong{
     color: #000;
     text-transform: capitalize;
 }
+.continerimagDiploma
+{
+    width: 50%;
+}
 .imagDiploma
 {
-    display: flex;
-    justify-content: space-between;
-    width: 500;
-    height: 500;
-    
+  width: 100%;  
 }
 .cursoActual
 {
-    margin: 30px;
-    padding: 30px;
+    margin: auto;
     background-color: #d0d7ded3;
     border: #d0d7ded3 1px;
     border-radius: 10px;
-    width: 500px;
-    height: 450px;
+    width: 40%;
+    text-align: center;
+    
 }
 
 .seccionExperiencia h2
 {
     padding: 30px;
+}
+
+/*experiencia conferencias o vides*/
+.seccionExperiencia h2
+{
+    margin: 0 100px;
 }
 .experience
 {
@@ -164,17 +186,17 @@ h1 strong{
     border: rgba(255, 255, 255, 0.76) 1px solid;
     border-radius: 10px;
     align-items: center;
-
-}
-.experience h3
-{
-    padding: 30px;
+    max-width: 2600px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
 
 }
 .experience img
 {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between
     
 }
 
@@ -182,8 +204,7 @@ h1 strong{
 {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-
+    justify-content: space-between;
 }
 .c
 {
@@ -308,6 +329,10 @@ h1 strong{
 {
     width: 480px;
     height: 280px;
+    
+}
+.continerimgarduino
+{
     object-fit: cover;
 }
 .arduinoDiscrepcion
@@ -328,6 +353,7 @@ h1 strong{
     padding: 5px 20px;
     border-radius: 10px
 }
+/*contactos*/
 .contact
 {
     background-color: #8485FE;
@@ -337,6 +363,9 @@ h1 strong{
     justify-content: space-between;
     padding: 0px;
     margin: 0px;
+    max-width: 2600px;
+    flex-wrap: wrap;
+    margin: 0 auto;
    
     
 }
@@ -402,6 +431,7 @@ h1 strong{
     background-image: url(../imagenes/in.jpg);
    
 }
+/*pie*/
 .footer
 {
     background-color: #1B2127;
@@ -410,17 +440,108 @@ h1 strong{
     background-repeat: no-repeat;
     background-size: 80px 80px;
     display: flex;
+    flex-wrap: nowrap;
     margin: 100;
     padding: 0;
     align-items: center;
     justify-content: space-between;
     height: 90px;
     color: white;
-
+    max-width: 2600px;
+    margin: 0 auto;
 }
 .footer div p
 {
     display: flex;
     align-items: center;
     padding: 10px;
+}
+/* desktop first */
+
+@media (max-width: 2640px) {
+  
+    .imaghero
+    {
+        height: 50%;
+        width: 40%;
+    }
+}
+
+@media (max-width: 1024px)
+{
+    .imaghero
+    {
+        height: 40%;
+        width: 30%;
+
+    }
+    .h1{
+        font-size: 60% 60%;
+    }
+    .cours
+    {
+        display: block;
+    }
+    .textconocimiento
+    {
+        margin: auto;
+      
+    }
+    .cursoActual
+    {
+        margin: auto;
+       
+    }
+    .imagDiploma
+    {
+        margin: 5%;
+    }
+   .imageContainer{
+    margin:auto;
+   }
+   .continerimagDiploma
+   {
+    margin: auto;
+   }
+   
+}
+
+
+@media (max-width: 767px) {
+    .cabezera
+    {
+        display: block;
+        height: auto;
+    }
+    .figuraLogo
+    {
+        display: flex;
+        justify-content: center;
+        
+    }
+    .cabezera ul
+    {
+        display: block;
+    }
+    .cabezera ul li 
+    {
+        height: 50px;
+    }
+    .cabezera ul li a
+    {
+        justify-content: center;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    body {
+      
+    }
+}
+
+@media (max-width: 320px) {
+    body {
+      
+    }
 }
