@@ -102,6 +102,7 @@ h1 strong{
   align-items: center;
   margin: 0 auto;
   justify-content: space-between;
+    height: 90%;
 }
 
 .titleCours
@@ -110,12 +111,11 @@ h1 strong{
 }
 .textconocimiento
 {
-    margin: auto;
+    margin: 30px auto;
     background-color: #d0d7ded3;
     border: #d0d7ded3 1px;
     border-radius: 10px;
     width: 40%;
-    
       
 }
 .imageContainer
@@ -161,7 +161,7 @@ h1 strong{
 }
 .cursoActual
 {
-    margin: auto;
+    margin: 30px auto;
     background-color: #d0d7ded3;
     border: #d0d7ded3 1px;
     border-radius: 10px;
@@ -205,22 +205,28 @@ h1 strong{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 90%;
 }
 .c
 {
     display: flex;
     flex-wrap: wrap;
     background-color:#D7DDE3;
-    width: 480px;
-    height: 480px;
+    width: 50%;
     border: #D7DDE3 1px solid;
     border-radius: 10px;
-    margin: 20px;
+    margin: 1%;
+    
+}
+.continerimagc
+{
+    width: 100%;
+    height: 50%;
 }
 .c img
 {
-    width: 480px;
-    height: 280px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     
 }
@@ -249,16 +255,20 @@ h1 strong{
     display: flex;
     flex-wrap: wrap;
     background-color:#DFDFDF;
-    width: 480px;
-    height: 480px;
+    width: 40%;
     border: #DFDFDF 1px solid;
     border-radius: 10px;
-    margin: 20px;
+    margin: 1%;
+}
+.continerimagjava
+{
+    width: 100%;
+    height: 50%;
 }
 .java img
 {
-    width: 480px;
-    height: 280px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 .javaDescripcion
@@ -284,17 +294,22 @@ h1 strong{
     display: flex;
     flex-wrap: wrap;
     background-color:#d8d8d8d0;
-    width: 480px;
-    height: 480px;
+    width: 40%;
     border: #d8d8d8d0 1px solid;
     border-radius: 10px;
-    margin: 20px;
+    margin: 1%;
 }
-.python img
+.continerimagpython
 {
-    width: 380px;
-    height: 280px;
-    object-fit: cover;
+    width: 100%;
+    height: 55%;
+    
+}
+.imagePython
+{
+    width: 100%;
+    height: 100%;
+
 }
 .pythonDescripcion
 {
@@ -319,16 +334,21 @@ h1 strong{
     display: flex;
     flex-wrap: wrap;
     background-color:#D7DDE3;
-    width: 480px;
-    height: 480px;
+    width: 40%;
     border: #d0d7ded3 1px solid;
     border-radius: 10px;
-    margin: 20px;
+    margin:  1%;
+    object-fit: cover;
+}
+.continerimgarduino
+{
+    width: 100%;
+    height: 50%;
 }
 .arduino img
 {
-    width: 480px;
-    height: 280px;
+    width: 100%;
+    height: 100%;
     
 }
 .continerimgarduino
@@ -485,13 +505,50 @@ h1 strong{
     .textconocimiento
     {
         margin: auto;
-      
+        width: 80%;
+        font-size:16px;
     }
     .cursoActual
     {
         margin: auto;
-       
+       width: 80%;
+       font-size: 16px;
     }
+ 
+    .textconocimiento h3
+    {
+        font-size: 1.5em;
+    }
+    .textconocimiento p
+    {
+        font-size:1em;
+    }
+    .textconocimiento h4
+    {
+        font-size: 1.2em;
+    }
+    .titulosotorgados
+    {
+        margin: auto;
+        width: 60%;
+        font-size: 1em;
+    }
+    .portfoliDate strong
+    {
+        font-size: .8em;
+    }
+    .cursoActual h3
+    {
+        font-size: 1.5em;
+    }  
+    .cursoActual h4
+    {
+        font-size: 1.2em;
+    }  
+    .cursoActual p
+    {
+        font-size: 1em;
+    } 
     .imagDiploma
     {
         margin: 5%;
@@ -503,7 +560,30 @@ h1 strong{
    {
     margin: auto;
    }
-   
+   .tecnologias
+   {
+    display: block;
+   }
+   .c
+   {
+    margin: 20px auto;
+    width: 80%;
+   }
+   .java
+   {
+    margin: 20px  auto;
+    width: 80%;
+   }
+   .python
+   {
+    margin:  20px auto;
+    width: 80%;
+   }
+   .arduino
+   {
+    margin: 20px auto;
+    width: 80%;
+   }
 }
 
 
@@ -535,8 +615,14 @@ h1 strong{
 }
 
 @media (max-width: 480px) {
-    body {
-      
+    .textconocimiento
+    {
+        font-size:12px;
+    }
+    .cursoActual
+    {
+
+       font-size: 12px;
     }
 }
 
