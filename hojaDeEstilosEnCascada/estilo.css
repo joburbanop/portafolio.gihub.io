@@ -1,10 +1,13 @@
 
 body
-{  
+{   
+    margin: 0 5% 0 10%;
     font-family: 'Ubuntu', sans-serif;
     background-image: url("../imagenes/muro.jpg") ; 
 }
+
 /*la parte superior de el portafolio*/
+
 .cabezera
 { 
     
@@ -107,7 +110,11 @@ h1 strong{
 
 .titleCours
 {
-    padding: 30px;
+    margin:0;
+    background-color: #8485FE;
+    border: #8485FE 20px solid;
+    border-radius: 0 200px 200px 0;
+    color: #fdfdfd;
 }
 .textconocimiento
 {
@@ -189,30 +196,39 @@ h1 strong{
     max-width: 2600px;
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
+    margin: auto auto;
+    justify-content: center;
+
 
 }
-.experience img
+
+
+.seccionExperiencia h2
+   {
+    font-size: 1.5em;
+    margin:0;
+    background-color: #8485FE;
+    border: #8485FE 1px solid;
+    border-radius: 0 200px 200px 0;
+    color: #fdfdfd;
+   }
+
+.tecnologias 
 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between
-    
-}
-
-.tecnologias
-{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 90%;
+    margin:0 0;
+    padding: 0 0;
+    text-align: center;
 }
 .c
 {
     display: flex;
     flex-wrap: wrap;
     background-color:#D7DDE3;
-    width: 50%;
+    width: 40%;
     border: #D7DDE3 1px solid;
     border-radius: 10px;
     margin: 1%;
@@ -234,11 +250,12 @@ h1 strong{
 {
     margin: 20px;
     background-color: #cbd2d8;
-    margin-top: -40px;
+    margin-top: -100px;
     position: relative;
     padding: 20px 40px;
     text-align: center;
     border-radius: 10px;
+   
 }
 .linkc strong a
 {
@@ -247,7 +264,6 @@ h1 strong{
     border: 1px solid;
     padding: 5px 20px;
     border-radius: 10px;
-    
 
 }
 .java
@@ -275,11 +291,12 @@ h1 strong{
 {
     margin: 20px;
     background-color: #d1d0d0;
-    margin-top: -30px;
+    margin-top: -100px;
     position: relative;
     padding: 20px 40px;
     text-align: center;
     border-radius: 10px;
+    font-size: 1em;
 }
 .javaDescripcion strong a
 {
@@ -288,6 +305,7 @@ h1 strong{
     border: 1px solid;
     padding: 5px 20px;
     border-radius: 10px;
+    font-size: 1.3em;
 }
 .python
 {
@@ -298,6 +316,7 @@ h1 strong{
     border: #d8d8d8d0 1px solid;
     border-radius: 10px;
     margin: 1%;
+    object-fit: cover;
 }
 .continerimagpython
 {
@@ -315,7 +334,7 @@ h1 strong{
 {
     margin: 20px;
     background-color: #d1d0d0;
-    margin-top: -30px;
+    margin-top: -100px;
     position: relative;
     padding: 20px 40px;
     text-align: center;
@@ -359,7 +378,7 @@ h1 strong{
 {
     margin: 20px;
     background-color: #cbd2d8;
-    margin-top: -50px;
+    margin-top: -100px;
     position: relative;
     padding: 20px 40px;
     text-align: center;
@@ -455,10 +474,6 @@ h1 strong{
 .footer
 {
     background-color: #1B2127;
-    background-image: url(../imagenes/logo.png);
-    background-position-x: 750px;
-    background-repeat: no-repeat;
-    background-size: 80px 80px;
     display: flex;
     flex-wrap: nowrap;
     margin: 100;
@@ -472,8 +487,7 @@ h1 strong{
 }
 .footer div p
 {
-    display: flex;
-    align-items: center;
+    
     padding: 10px;
 }
 /* desktop first */
@@ -560,6 +574,15 @@ h1 strong{
    {
     margin: auto;
    }
+   .seccionExperiencia h2
+   {
+    font-size: 20px;
+    margin:0;
+    background-color: #8485FE;
+    border: #8485FE 1px solid;
+    border-radius: 0 200px 200px 0;
+    color: #fdfdfd;
+   }
    .tecnologias
    {
     display: block;
@@ -583,6 +606,31 @@ h1 strong{
    {
     margin: 20px auto;
     width: 80%;
+   }
+    
+   .cdescripcion
+   {
+       width: 100%;
+       margin:0%;
+       padding: 0%;
+   }
+   .javaDescripcion
+   {
+       width: 100%;
+       margin: 0%;
+       padding: 0%;
+   }
+   .pythonDescripcion
+   {
+       width: 100%;
+       padding: 0%;
+       margin: 0%;
+   }
+   .arduinoDiscrepcion
+   {
+       width: 100%;
+       margin: 0%;
+       padding: 0%;
    }
 }
 
@@ -624,10 +672,123 @@ h1 strong{
 
        font-size: 12px;
     }
+    .contact 
+    {
+        
+        width: 100%;
+        justify-content: center;
+       
+    }
+    .formEmail
+    {   
+        justify-content: center;
+        width: 100%;
+        padding: 0%;
+        margin: auto;
+    }
+    .formEmail h3
+    {
+        margin:0 0 1% 32% ;
+    }
+    .formEmail input
+    {
+        margin:0% 0% 1% 25% ;
+        padding: auto;
+    }
+    .formEmail button
+    {
+        margin:1% auto;
+    }
+
+    .social
+    {
+        width: 60%;
+        margin: auto;
+        justify-content: center;
+    }
+    .in
+    {
+        height: 35px;
+        width: 35px;
+        background-size: 35px 35px;
+
+    }
+    .cdescripcion
+    {
+        font-size: 12px;
+    }
+    .linkc strong
+    {
+        font-size: 1.5em;
+    }
+    .javaDescripcion
+    {
+        font-size: 12px;
+    }
+    .javaDescripcion strong
+    {
+        font-size: 1.5em;
+    }
+    .pythonDescripcion
+    {
+        font-size: 12px;
+    }
+    .pythonDescripcion strong
+    {
+        font-size: 1.5em;
+    }
+    .arduinoDiscrepcion
+    {
+        font-size: 12px;
+    }
+    .arduinoDiscrepcion strong
+    {
+        font-size: 1.5em;
+    }
 }
 
-@media (max-width: 320px) {
-    body {
-      
+@media (max-width: 391px) {
+    
+    .contact
+    {
+        display: block;
+    }
+    .formEmail
+    {
+        width: 80%;
+    }
+    .formEmail h3
+    {
+        width: 70%;
+        margin: auto;
+        justify-content: center;
+    }
+    .formEmail input
+    {
+        width:80%;
+        margin: 0% 0%;
+    
+    }
+    .social
+    {
+        width: 50%;
+    }
+    .in
+    {
+        margin: auto;
+        justify-content: center;
+        height: 30px;
+        width: 30px;
+        background-size: 30px 30px;
+    }
+    .fotertext p
+    {
+        font-size: .8em;
+        padding: auto;
+    }
+    .flechatext p
+    {
+        font-size: .8em;
+        padding: auto;
     }
 }
