@@ -771,15 +771,16 @@ h1 strong{
     }
     .social
     {
-        width: 50%;
+
+        justify-content: space-around;
+        margin: 0% 0%;
     }
     .in
     {
-        margin: auto;
+        margin: 0 0;
         justify-content: center;
-        height: 30px;
-        width: 30px;
-        background-size: 30px 30px;
+        align-items: center;
+      
     }
     .fotertext p
     {
