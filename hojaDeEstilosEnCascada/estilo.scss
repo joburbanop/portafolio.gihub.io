@@ -1,0 +1,85 @@
+$bg-color: #ffffff;
+$header-max-width-lg: 1200px;
+$header-max-width-sm: 768px;
+$header-max-height-sm: 100px;
+$font-family: 'Roboto';
+$color-font-secundario:#4E4A4A;
+
+
+body {
+    background-color: $bg-color;
+    overflow: hidden;
+}
+.fon-type{
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+}
+  
+.header{
+    background-color: $bg-color;
+}
+
+.jumbotron
+{
+    background-color: $bg-color;
+    padding-top: 5rem; 
+}
+.container-hero{
+  
+    position: absolute;
+    bottom: -35%;
+    left: -16%;
+}
+
+.background-image {
+    position: relative;
+    z-index: 1;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    z-index: 2;
+}
+
+.informacion{
+    position: absolute;
+    top: 12%;
+    left: 30%;
+}
+
+.box{
+
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #F4F4F4;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+
+}
+.p1{
+  
+    font-size: 24px;
+    line-height: 28px;
+    color: $color-font-secundario;
+}
+.p2{
+
+    font-size: 32px;
+    line-height: 38px;
+    color: #7AA92C;
+   
+
+}
+.p3{
+
+    font-size: 20px;
+    line-height: 23px;
+    color: $color-font-secundario;
+
+}
+
